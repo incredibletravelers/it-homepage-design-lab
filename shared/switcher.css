@@ -1,0 +1,40 @@
+/* Shared "Switch design" chip — sits away from WhatsApp / call controls */
+.switcher{
+  position:fixed;z-index:400;
+  left:16px;bottom:16px;
+  display:flex;align-items:center;gap:2px;
+  padding:4px 4px 4px 10px;
+  border-radius:999px;
+  background:rgba(12,12,14,.9);
+  color:#fff;
+  border:1px solid rgba(255,255,255,.12);
+  backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);
+  font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif;
+  box-shadow:0 10px 30px rgba(0,0,0,.28);
+}
+.switcher__label{
+  font-size:9px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
+  color:rgba(255,255,255,.55);padding:0 8px 0 4px;white-space:nowrap;
+}
+.switcher a{
+  display:grid;place-items:center;
+  min-width:30px;height:30px;padding:0 8px;
+  border-radius:999px;color:#fff;text-decoration:none;
+  font-size:11px;font-weight:700;letter-spacing:.04em;
+}
+.switcher a:hover{background:rgba(255,255,255,.12)}
+.switcher a.is-on{background:#fff;color:#111}
+.switcher__all{letter-spacing:.08em;text-transform:uppercase;font-size:9px !important}
+@media (max-width:720px){
+  /* Full-width top bar on phones — never covers WhatsApp (bottom-right) or the header logo */
+  .switcher{
+    left:0;right:0;bottom:auto;top:0;
+    width:100%;border-radius:0;justify-content:center;
+    padding:5px 8px;box-shadow:0 8px 18px rgba(0,0,0,.25);
+  }
+  .switcher a{min-width:28px;height:28px}
+  .switcher__label{padding:0 8px 0 2px}
+}
+@media (prefers-reduced-motion:reduce){
+  .switcher{transition:none}
+}

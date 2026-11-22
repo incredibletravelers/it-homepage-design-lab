@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="en-IN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Visa Finder — Incredible Travellers · Design concept B</title>
+<meta name="description" content="Product-style design concept for Incredible Travellers: check a visa path before you apply.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../shared/switcher.css">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="../images/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<nav class="switcher" aria-label="Switch design concept">
+  <span class="switcher__label">Design</span>
+  <a href="../concept-a/">A</a>
+  <a href="../concept-b/" class="is-on" aria-current="page">B</a>
+  <a href="../concept-c/">C</a>
+  <a href="../" class="switcher__all">All</a>
+</nav>
+
+<div class="util">
+  <span>Mon–Sat · 10:00–18:00 IST</span>
+  <a href="tel:+919667661312">+91 96676 61312</a>
+  <a href="mailto:visas@incredibletravellers.com">visas@incredibletravellers.com</a>
+  <span class="util__note">Private consultancy · not a government agency</span>
+</div>
+
+<header class="top" id="top">
+  <a class="brand" href="#top" aria-label="Incredible Travellers home">
+    <img src="../images/logo.png" width="200" height="78" alt="Incredible Travellers">
+  </a>
+  <nav class="top__nav" aria-label="Primary">
+    <a href="#finder">Finder</a>
+    <a href="#services">Services</a>
+    <a href="#compare">Consultations</a>
+    <a href="#faq">FAQ</a>
+    <a href="#book">Contact</a>
+  </nav>
+  <div class="top__end">
+    <a class="btn btn--ghost" href="https://wa.me/919667661312" target="_blank" rel="noopener">WhatsApp</a>
+    <a class="btn btn--solid" href="#finder">Start a check</a>
+    <button class="burger" type="button" aria-label="Open menu" aria-expanded="false">☰</button>
+  </div>
+</header>
+
+<div class="sheet" id="sheet" hidden>
+  <button type="button" class="sheet__x" aria-label="Close">✕</button>
+  <a href="#finder">Finder</a><a href="#services">Services</a>
+  <a href="#compare">Consultations</a><a href="#faq">FAQ</a><a href="#book">Contact</a>
+</div>
+
+<main id="main">
+
+<section class="hero" id="finder">
+  <div class="hero__intro">
+    <p class="mono">Visa path check · ~2 minutes</p>
+    <h1>See the path before you apply.</h1>
+    <p class="sub">Pick a country and a visa type. We’ll show the documents, timing and fees we can already confirm — and flag anything that still needs a conversation.</p>
+    <ul class="pills-silent">
+      <li>Free first consultation</li>
+      <li>Delhi desk, Mon–Sat 10–6</li>
+      <li>Google rating <span class="ph">[to confirm]</span></li>
+    </ul>
+  </div>
+
+  <div class="widget" id="widget" data-step="1">
+    <div class="widget__head">
+      <ol class="progress" aria-label="Steps">
+        <li class="is-on" data-goto="1"><span>1</span> Country</li>
+        <li data-goto="2"><span>2</span> Visa type</li>
+        <li data-goto="3"><span>3</span> Your path</li>
+      </ol>
+    </div>
+
+    <div class="panel" data-panel="1">
+      <h2>Where do you want to go?</h2>
+      <p class="hint">Select one destination to continue.</p>
+      <div class="choices" role="list">
+        <button type="button" class="choice" data-country="Schengen / Europe" data-flag="eu">
+          <img src="../images/flags/eu.svg" alt="" width="28" height="20"><span>Schengen / Europe</span>
+        </button>
+        <button type="button" class="choice" data-country="United Kingdom" data-flag="gb">
+          <img src="../images/flags/gb.svg" alt="" width="28" height="20"><span>United Kingdom</span>
+        </button>
+        <button type="button" class="choice" data-country="United States" data-flag="us">
+          <img src="../images/flags/us.svg" alt="" width="28" height="20"><span>United States</span>
+        </button>
+        <button type="button" class="choice" data-country="Canada" data-flag="ca">
+          <img src="../images/flags/ca.svg" alt="" width="28" height="20"><span>Canada</span>
+        </button>
+        <button type="button" class="choice" data-country="Australia" data-flag="au">
+          <img src="../images/flags/au.svg" alt="" width="28" height="20"><span>Australia</span>
+        </button>
+        <button type="button" class="choice" data-country="Dubai (UAE)" data-flag="ae">
+          <img src="../images/flags/ae.svg" alt="" width="28" height="20"><span>Dubai (UAE)</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="panel" data-panel="2" hidden>
+      <button type="button" class="back" data-back>← Country</button>
+      <h2>What kind of visa?</h2>
+      <p class="hint">For <strong id="countryLabel">your destination</strong>.</p>
+      <div class="choices choices--type" role="list">
+        <button type="button" class="choice" data-type="Tourist / visit">Tourist / visit</button>
+        <button type="button" class="choice" data-type="Business">Business</button>
+        <button type="button" class="choice" data-type="Student">Student</button>
+        <button type="button" class="choice" data-type="Work / PR">Work / PR</button>
+        <button type="button" class="choice" data-type="Family">Family</button>
+        <button type="button" class="choice" data-type="Not sure yet">I’m not sure yet</button>
+      </div>
+    </div>
+
+    <div class="panel" data-panel="3" hidden>
+      <button type="button" class="back" data-back>← Visa type</button>
+      <h2>Your path snapshot</h2>
+      <p class="hint"><span id="summaryLine"></span> — figures below are placeholders until we confirm them for your case.</p>
+      <div class="result">
+        <div class="stat">
+          <span class="mono">Documents</span>
+          <ul id="docList">
+            <li>Valid passport</li>
+            <li>Completed application form</li>
+            <li>Purpose of travel evidence</li>
+            <li>Financials &amp; ties to India</li>
+            <li>Additional items <span class="ph">[to confirm]</span></li>
+          </ul>
+        </div>
+        <div class="stat">
+          <span class="mono">Typical time</span>
+          <p class="stat__big"><span class="ph">[to confirm]</span></p>
+          <p>Varies by country, season and appointment availability.</p>
+        </div>
+        <div class="stat">
+          <span class="mono">Official fees</span>
+          <p class="stat__big"><span class="ph">[to confirm]</span></p>
+          <p>Embassy / visa fees are separate from our consultation fee.</p>
+        </div>
+      </div>
+      <div class="result-cta">
+        <a class="btn btn--solid" href="#book">Book a free consultation</a>
+        <a class="btn btn--dark" href="#compare">Get a detailed consultation <em>Paid</em></a>
+        <a class="btn btn--ghost" href="https://wa.me/919667661312" target="_blank" rel="noopener">WhatsApp us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bento" id="services">
+  <header class="sec">
+    <p class="mono">Services</p>
+    <h2>Everything we can take on, in one desk.</h2>
+  </header>
+  <div class="bento__grid">
+    <article class="cell cell--lg">
+      <p class="mono">01 · Visit</p>
+      <h3>Tourist &amp; visit visas</h3>
+      <p>Holiday, family visits and short stays. We build a file that matches the itinerary, not a generic checklist.</p>
+    </article>
+    <article class="cell">
+      <p class="mono">02 · Study</p>
+      <h3>Student visas</h3>
+      <p>Admission to application: funds, ties, and a clear study story.</p>
+    </article>
+    <article class="cell">
+      <p class="mono">03 · Work</p>
+      <h3>Work &amp; PR</h3>
+      <p>Pathways and profiles, explained without the jargon.</p>
+    </article>
+    <article class="cell cell--accent">
+      <p class="mono">04 · After a no</p>
+      <h3>Refusals &amp; appeals</h3>
+      <p>We read the letter with you and plan a reapplication or appeal where that is possible.</p>
+    </article>
+    <article class="cell">
+      <p class="mono">05 · Business</p>
+      <h3>Business visas</h3>
+      <p>Meetings, conferences, company letters and schedules.</p>
+    </article>
+    <article class="cell">
+      <p class="mono">06 · USA</p>
+      <h3>US appointments</h3>
+      <p>DS-160 support, scheduling and interview prep.</p>
+    </article>
+    <article class="cell cell--sm">
+      <p class="mono">07</p>
+      <h3>Insurance</h3>
+      <p>Cover that usually meets embassy expectations.</p>
+    </article>
+    <article class="cell cell--sm">
+      <p class="mono">08</p>
+      <h3>Flights &amp; hotels</h3>
+      <p>Itineraries that support the visa file.</p>
+    </article>
+  </div>
+  <p class="fine">Inclusions <span class="ph">[to confirm]</span> in writing before any paid work begins.</p>
+</section>
+
+<section class="compare" id="compare">
+  <header class="sec">
+    <p class="mono">Consultations</p>
+    <h2>Choose the sitting that fits the file.</h2>
+  </header>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th></th>
+          <th>Free consultation</th>
+          <th class="hi">Detailed consultation <span>Paid</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Best for</th>
+          <td>A first conversation: country, purpose, whether to apply now.</td>
+          <td>A complete review of documents, profile and any refusal history.</td>
+        </tr>
+        <tr>
+          <th scope="row">You leave with</th>
+          <td>A clear next step and a sense of the path.</td>
+          <td>A personalised checklist, prepared for your case.</td>
+        </tr>
+        <tr>
+          <th scope="row">Duration</th>
+          <td><span class="ph">[to confirm]</span></td>
+          <td><span class="ph">[to confirm]</span></td>
+        </tr>
+        <tr>
+          <th scope="row">Fee</th>
+          <td>Free</td>
+          <td>₹<span class="ph">[to confirm]</span></td>
+        </tr>
+        <tr>
+          <th scope="row"></th>
+          <td><a class="btn btn--ghost" href="#book">Book free</a></td>
+          <td><a class="btn btn--solid" href="#book">Request paid session</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section class="faq" id="faq">
+  <header class="sec">
+    <p class="mono">FAQ</p>
+    <h2>Straight answers.</h2>
+  </header>
+  <div class="faq__list">
+    <details open>
+      <summary>Do you guarantee a visa?</summary>
+      <p>No. Visa decisions are made solely by the relevant authorities. We prepare a complete, honest application and stay with you through the process.</p>
+    </details>
+    <details>
+      <summary>How long does it take?</summary>
+      <p>Processing times vary by country, visa type and the season. Typical ranges are <span class="ph">[to confirm]</span> and will be stated for your case, not guessed on this page.</p>
+    </details>
+    <details>
+      <summary>Are you a government agency?</summary>
+      <p>No. Incredible Travellers is a private visa and travel consultancy in Delhi. We are not affiliated with any embassy or immigration authority.</p>
+    </details>
+    <details>
+      <summary>Can you help after a refusal?</summary>
+      <p>Yes. We review the refusal letter with you and discuss a fresh application or an appeal, where that route exists.</p>
+    </details>
+    <details>
+      <summary>Where are you, and when can I call?</summary>
+      <p>Delhi. Office address <span class="ph">[to confirm]</span>. Hours: Monday to Saturday, 10:00 AM – 6:00 PM. Phone +91 96676 61312, or WhatsApp.</p>
+    </details>
+  </div>
+</section>
+
+<section class="book" id="book">
+  <div>
+    <p class="mono">Contact</p>
+    <h2>Talk to the Delhi desk.</h2>
+    <p>Call, WhatsApp, or leave a number. We reply during 10:00 AM – 6:00 PM, Monday to Saturday.</p>
+    <ul class="contact-list">
+      <li><a href="tel:+919667661312">+91 96676 61312</a></li>
+      <li><a href="https://wa.me/919667661312" target="_blank" rel="noopener">WhatsApp 919667661312</a></li>
+      <li><a href="mailto:visas@incredibletravellers.com">visas@incredibletravellers.com</a></li>
+    </ul>
+  </div>
+  <form id="callback">
+    <label>Full name <input name="name" autocomplete="name" required></label>
+    <label>Phone <input name="phone" type="tel" autocomplete="tel" required></label>
+    <label>Interest
+      <select name="interest">
+        <option>Tourist visa</option><option>Study visa</option><option>Business visa</option>
+        <option>Work / PR</option><option>A refusal</option><option>Not sure yet</option>
+      </select>
+    </label>
+    <label class="row"><input type="checkbox" required> I understand this is a design demo.</label>
+    <button class="btn btn--solid" type="submit">Request a call back</button>
+    <p class="fine">Demo only. No data is sent.</p>
+  </form>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div>
+    <strong>Incredible Travellers</strong>
+    <p>Private visa consultancy, Delhi. Not a government agency. Visa decisions are made solely by the relevant authorities.</p>
+  </div>
+  <p>© 2026 Incredible Travellers · Design concept B — Smart Visa Finder · Not the live website.</p>
+</footer>
+
+<aside class="wa" id="wa">
+  <button type="button" class="wa__bubble" id="waToggle" aria-expanded="false" aria-controls="waCard">
+    WhatsApp
+  </button>
+  <div class="wa__card" id="waCard" hidden>
+    <header>
+      <strong>Incredible Travellers</strong>
+      <span>Usually replies Mon–Sat, 10 AM – 6 PM</span>
+    </header>
+    <div class="wa__thread">
+      <p class="bubble in">Hello — tell us the country and the visa you have in mind. We’ll take it from there during office hours.</p>
+    </div>
+    <a class="btn btn--wa" href="https://wa.me/919667661312" target="_blank" rel="noopener">Open WhatsApp</a>
+  </div>
+</aside>
+
+<div class="toast" role="status" aria-live="polite"></div>
+<script src="main.js" defer></script>
+</body>
+</html>

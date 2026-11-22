@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="en-IN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Journey — Incredible Travellers · Design concept A</title>
+<meta name="description" content="Editorial design concept for Incredible Travellers, a Delhi visa and travel consultancy.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,300;1,6..72,500;1,6..72,600&family=Sora:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../shared/switcher.css">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="../images/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<nav class="switcher" aria-label="Switch design concept">
+  <span class="switcher__label">Design</span>
+  <a href="../concept-a/" class="is-on" aria-current="page">A</a>
+  <a href="../concept-b/">B</a>
+  <a href="../concept-c/">C</a>
+  <a href="../" class="switcher__all">All</a>
+</nav>
+
+<header class="nav" id="top">
+  <a class="logo" href="#top" aria-label="Incredible Travellers home">
+    <img src="../images/logo.png" width="200" height="78" alt="Incredible Travellers">
+  </a>
+  <nav class="nav__links" aria-label="Primary">
+    <a href="#destinations">Destinations</a>
+    <a href="#process">The process</a>
+    <a href="#services">Services</a>
+    <a href="#journal">Journal</a>
+    <a href="#book">Contact</a>
+  </nav>
+  <div class="nav__end">
+    <a class="nav__phone" href="tel:+919667661312">+91 96676 61312</a>
+    <a class="nav__book" href="#book">Book a consultation</a>
+    <button class="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="drawer"><span></span></button>
+  </div>
+</header>
+
+<div class="drawer" id="drawer" hidden>
+  <button class="drawer__close" type="button" aria-label="Close menu">Close</button>
+  <a href="#destinations">Destinations</a>
+  <a href="#process">The process</a>
+  <a href="#services">Services</a>
+  <a href="#journal">Journal</a>
+  <a href="#book">Contact</a>
+  <a class="drawer__cta" href="#book">Book a free consultation</a>
+  <a href="https://wa.me/919667661312" target="_blank" rel="noopener">WhatsApp us</a>
+</div>
+
+<main id="main">
+
+<section class="hero" aria-label="Introduction">
+  <div class="hero__slides" id="slides">
+    <figure class="slide is-on" data-place="Schengen / Europe" data-n="01">
+      <img src="../images/slide-europe.webp" alt="The Eiffel Tower at dusk along the Seine in Paris" width="1600" height="900">
+    </figure>
+    <figure class="slide" data-place="United Kingdom" data-n="02">
+      <img src="../images/slide-uk.webp" alt="Aerial view of Tower Bridge and the Thames in London" width="1600" height="900">
+    </figure>
+    <figure class="slide" data-place="United States" data-n="03">
+      <img src="../images/slide-usa.webp" alt="Manhattan avenues at sunrise" width="1600" height="900">
+    </figure>
+    <figure class="slide" data-place="Canada" data-n="04">
+      <img src="../images/slide-canada.webp" alt="Toronto waterfront and skyline in late sun" width="1600" height="900">
+    </figure>
+    <figure class="slide" data-place="Australia" data-n="05">
+      <img src="../images/slide-australia.webp" alt="Sydney Opera House at blue hour" width="1600" height="900">
+    </figure>
+    <figure class="slide" data-place="Dubai" data-n="06">
+      <img src="../images/slide-dubai.webp" alt="Burj Al Arab standing in the turquoise Persian Gulf" width="1600" height="900">
+    </figure>
+  </div>
+  <div class="hero__veil" aria-hidden="true"></div>
+  <div class="hero__copy">
+    <p class="kicker">Visa &amp; travel consultancy · Delhi</p>
+    <h1>First the file.<br><em>Then the view.</em></h1>
+    <p class="lede">Tourist, study, business, work and PR visas — prepared with care for Europe, the UK, the USA, Canada, Australia and Dubai.</p>
+    <div class="hero__actions">
+      <a class="text-cta" href="#book">Book a free consultation</a>
+      <a class="text-cta text-cta--quiet" href="#paid">Get a detailed consultation <i>Paid</i></a>
+      <a class="text-cta text-cta--quiet" href="https://wa.me/919667661312" target="_blank" rel="noopener">WhatsApp us</a>
+    </div>
+  </div>
+  <div class="hero__index">
+    <span class="hero__num" id="slideNum">01</span>
+    <div class="hero__bar"><span id="slideBar"></span></div>
+    <span class="hero__place" id="slidePlace">Schengen / Europe</span>
+    <div class="hero__controls">
+      <button type="button" class="icon-btn" id="prevSlide" aria-label="Previous destination">‹</button>
+      <button type="button" class="icon-btn" id="nextSlide" aria-label="Next destination">›</button>
+    </div>
+  </div>
+</section>
+
+<section class="destinations" id="destinations">
+  <div class="chapter">
+    <span>01 — Destinations</span>
+    <h2>Where do you want <em>to arrive?</em></h2>
+    <p>Scroll sideways through the routes we prepare most often. Inclusions and processing times are confirmed case by case.</p>
+  </div>
+  <div class="dest-wrap">
+    <div class="dest-track" tabindex="0" aria-label="Destination gallery">
+      <article class="dest">
+        <img src="../images/tile-europe.webp" alt="Paris, representing Schengen travel" width="1100" height="618">
+        <div class="dest__meta"><b>Schengen / Europe</b><span>Tourist · Business · Study</span></div>
+      </article>
+      <article class="dest">
+        <img src="../images/tile-uk.webp" alt="London, United Kingdom" width="1100" height="618">
+        <div class="dest__meta"><b>United Kingdom</b><span>Tourist · Study · Work</span></div>
+      </article>
+      <article class="dest">
+        <img src="../images/tile-usa.webp" alt="New York, United States" width="1100" height="618">
+        <div class="dest__meta"><b>United States</b><span>B1/B2 · Study · Appointments</span></div>
+      </article>
+      <article class="dest">
+        <img src="../images/tile-canada.webp" alt="Toronto, Canada" width="1100" height="618">
+        <div class="dest__meta"><b>Canada</b><span>Tourist · Study · Work · PR</span></div>
+      </article>
+      <article class="dest">
+        <img src="../images/tile-australia.webp" alt="Sydney, Australia" width="1100" height="618">
+        <div class="dest__meta"><b>Australia</b><span>Tourist · Study · Work · PR</span></div>
+      </article>
+      <article class="dest">
+        <img src="../images/tile-dubai.webp" alt="Burj Al Arab, Dubai" width="1100" height="618">
+        <div class="dest__meta"><b>Dubai (UAE)</b><span>Visit · Business <i class="ph">[to confirm]</i></span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="essay" id="why">
+  <div class="essay__img">
+    <img src="../images/photo-plane.webp" alt="Aeroplane wing above clouds at sunrise" width="1600" height="1063">
+  </div>
+  <div class="essay__copy reveal">
+    <span class="chapter-mini">02 — The practice</span>
+    <h2>A private consultancy, <em>not an embassy.</em></h2>
+    <p>Incredible Travellers is a Delhi visa and travel consultancy. We help you understand the file, gather the right documents, and move through the application with honest advice and real updates — never with a promised outcome. Visa decisions are made solely by the relevant authorities.</p>
+    <blockquote>
+      <p>Clear checklists. Careful review. A calmer journey from the first question to the stamp.</p>
+    </blockquote>
+    <ul class="truths">
+      <li>Mon–Sat, 10:00 AM – 6:00 PM</li>
+      <li>Delhi office · address <span class="ph">[to confirm]</span></li>
+      <li>Google rating <span class="ph">[to confirm]</span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="timeline" id="process">
+  <div class="chapter">
+    <span>03 — The process</span>
+    <h2>Four movements, <em>one file.</em></h2>
+  </div>
+  <ol class="steps">
+    <li class="reveal">
+      <span class="steps__n">I</span>
+      <h3>Tell us the plan</h3>
+      <p>Country, purpose, dates, and any previous refusal. A free consultation is often enough to see the path. A paid detailed session is there when the file is more complex.</p>
+    </li>
+    <li class="reveal">
+      <span class="steps__n">II</span>
+      <h3>We map the documents</h3>
+      <p>You leave with a personalised checklist — what is essential, what can wait, and what usually causes delays. Lists are confirmed for your case, not copied from a generic blog.</p>
+    </li>
+    <li class="reveal">
+      <span class="steps__n">III</span>
+      <h3>You apply, prepared</h3>
+      <p>Forms, appointments and supporting papers, reviewed before they leave your desk. We stay reachable on call or WhatsApp during office hours.</p>
+    </li>
+    <li class="reveal">
+      <span class="steps__n">IV</span>
+      <h3>We stay until there is an answer</h3>
+      <p>Updates as the file moves. If the decision is a refusal, we can review the letter and discuss a fresh application or an appeal.</p>
+    </li>
+  </ol>
+</section>
+
+<section class="services" id="services">
+  <div class="chapter">
+    <span>04 — Services</span>
+    <h2>What we can <em>take on.</em></h2>
+    <p>Final inclusions <span class="ph">[to confirm]</span> before we begin any paid work.</p>
+  </div>
+  <ol class="svc-list">
+    <li class="reveal"><span>01</span><div><h3>Tourist &amp; visit visas</h3><p>Holiday, family visits and short stays, with a document file that matches the itinerary.</p></div></li>
+    <li class="reveal"><span>02</span><div><h3>Business visas</h3><p>Meetings, conferences and company travel — letters, schedules and supporting papers in order.</p></div></li>
+    <li class="reveal"><span>03</span><div><h3>Student visas</h3><p>Admission to application: funds, ties, and the story the officer actually needs to read.</p></div></li>
+    <li class="reveal"><span>04</span><div><h3>Work &amp; PR guidance</h3><p>Pathways, points and profiles for the countries we counsel on, explained in plain language.</p></div></li>
+    <li class="reveal"><span>05</span><div><h3>Refusals &amp; appeals</h3><p>A calm reading of the refusal, then a plan to reapply or appeal where that is possible.</p></div></li>
+    <li class="reveal"><span>06</span><div><h3>USA visa appointments</h3><p>DS-160 support, scheduling and interview preparation for B1/B2 and student visas.</p></div></li>
+    <li class="reveal"><span>07</span><div><h3>Travel insurance</h3><p>Cover that meets the usual embassy expectations, confirmed for your dates.</p></div></li>
+    <li class="reveal"><span>08</span><div><h3>Flights &amp; hotels</h3><p>Itineraries that support the visa file, not just a booking confirmation.</p></div></li>
+  </ol>
+</section>
+
+<section class="voices" id="voices" data-carousel>
+  <div class="chapter">
+    <span>05 — Voices</span>
+    <h2>In their <em>words.</em></h2>
+    <p class="ph-line">Sample reviews only — to be replaced with real, permissioned Google reviews.</p>
+  </div>
+  <div class="quote-frame">
+    <button type="button" class="icon-btn quote-btn" data-prev aria-label="Previous review">‹</button>
+    <figure class="quote is-on">
+      <blockquote>“They went through every document with us, explained what was missing, and never promised a result they could not control.”</blockquote>
+      <figcaption><strong>A. S.</strong> · Tourist visa file · <em>Sample review</em></figcaption>
+    </figure>
+    <figure class="quote">
+      <blockquote>“After a refusal we finally understood the letter. The next file was quieter, more complete, and much less guesswork.”</blockquote>
+      <figcaption><strong>R. K.</strong> · Reapplication · <em>Sample review</em></figcaption>
+    </figure>
+    <figure class="quote">
+      <blockquote>“Clear checklists, honest timelines, and someone who answered the phone when we had a last-minute question.”</blockquote>
+      <figcaption><strong>M. P.</strong> · Student visa file · <em>Sample review</em></figcaption>
+    </figure>
+    <button type="button" class="icon-btn quote-btn" data-next aria-label="Next review">›</button>
+  </div>
+</section>
+
+<section class="journal" id="journal">
+  <div class="chapter">
+    <span>06 — Journal</span>
+    <h2>Guides, written <em>slowly.</em></h2>
+    <p>Topics we are preparing. Titles and publish dates <span class="ph">[to confirm]</span>.</p>
+  </div>
+  <div class="mag">
+    <article class="mag__feature reveal">
+      <img src="../images/photo-journal.webp" alt="Wooden boat approaching a mountain lake" width="1400" height="933">
+      <div>
+        <span>Guide</span>
+        <h3>If your visa was refused</h3>
+        <p>How to read the letter, what to keep, and when a fresh file is wiser than an argument.</p>
+      </div>
+    </article>
+    <article class="mag__side reveal">
+      <img src="../images/slide-europe.webp" alt="Paris at dusk" width="800" height="450">
+      <div>
+        <span>Guide</span>
+        <h3>Documents that usually matter on a first tourist visa</h3>
+      </div>
+    </article>
+    <article class="mag__side reveal">
+      <img src="../images/tile-canada.webp" alt="Toronto waterfront" width="1100" height="618">
+      <div>
+        <span>Guide</span>
+        <h3>Preparing a study file for Canada</h3>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="book" id="book">
+  <div class="book__intro reveal">
+    <span class="chapter-mini">07 — The desk</span>
+    <h2>Come in, or call.</h2>
+    <p>Free consultations are a first conversation. A paid detailed consultation is a longer sitting: documents, profile, refusal history and a personalised checklist. Fee ₹<span class="ph">[to confirm]</span>, duration <span class="ph">[to confirm]</span>.</p>
+    <ul class="book__contact">
+      <li><a href="tel:+919667661312">+91 96676 61312</a></li>
+      <li><a href="https://wa.me/919667661312" target="_blank" rel="noopener">WhatsApp 919667661312</a></li>
+      <li><a href="mailto:visas@incredibletravellers.com">visas@incredibletravellers.com</a></li>
+      <li>Mon–Sat, 10:00 AM – 6:00 PM</li>
+    </ul>
+  </div>
+  <form class="book__form" id="callback" novalidate>
+    <h3>Request a call back</h3>
+    <label>Name <input type="text" name="name" autocomplete="name" required></label>
+    <label>Phone <input type="tel" name="phone" autocomplete="tel" required></label>
+    <label>I am looking at
+      <select name="interest">
+        <option>Tourist visa</option><option>Study visa</option><option>Business visa</option>
+        <option>Work / PR</option><option>A refusal</option><option>Not sure yet</option>
+      </select>
+    </label>
+    <label class="check"><input type="checkbox" required> I understand this is a design demo — the live site will send this to the team.</label>
+    <button type="submit" class="submit">Send the request</button>
+    <p class="form-note">Demo only. No data is stored or emailed.</p>
+  </form>
+</section>
+
+<article class="paid" id="paid">
+  <p class="paid__tag">Paid</p>
+  <h2>Get a detailed consultation</h2>
+  <p>A one-on-one review of your documents, profile and refusal history, ending in a personalised checklist. Fee ₹<span class="ph">[to confirm]</span>.</p>
+  <div class="paid__actions">
+    <a class="submit" href="#book">Request this session</a>
+    <a class="text-cta" href="https://wa.me/919667661312" target="_blank" rel="noopener">WhatsApp us</a>
+  </div>
+</article>
+
+</main>
+
+<footer class="footer">
+  <div class="footer__grid">
+    <div>
+      <a class="logo logo--foot" href="#top"><img src="../images/logo.png" width="200" height="78" alt="Incredible Travellers"></a>
+      <p>Private visa and travel consultancy in Delhi. We are not a government agency and are not affiliated with any embassy or immigration authority.</p>
+    </div>
+    <div>
+      <h4>Visit</h4>
+      <p>Delhi · address <span class="ph">[to confirm]</span><br>Mon–Sat, 10:00 AM – 6:00 PM</p>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <p><a href="tel:+919667661312">+91 96676 61312</a><br><a href="mailto:visas@incredibletravellers.com">visas@incredibletravellers.com</a></p>
+    </div>
+    <div>
+      <h4>Legal</h4>
+      <p><a href="#">Privacy</a> · <a href="#">Terms</a> · <a href="#">Refunds</a></p>
+    </div>
+  </div>
+  <p class="colophon">© 2026 Incredible Travellers. Design concept A — Journey / Editorial. Photos: Unsplash License. Not the live website.</p>
+</footer>
+
+<div class="toast" role="status" aria-live="polite"></div>
+<script src="main.js" defer></script>
+</body>
+</html>

@@ -1,14 +1,14 @@
-Incredible Travellers — Homepage Design Lab (22 Nov 2026)
-Live: https://incredibletravelers.github.io/it-homepage-design-lab/
+Incredible Travellers — three new homepage design concepts (22 Nov 2026)
 
-This is a separate design-exploration demo of the homepage.
-The approved design link (https://incredibletravelers.github.io/it-homepage-demo/) is unchanged.
+Live chooser: https://incredibletravelers.github.io/it-homepage-design-lab/
+  A  Journey / Editorial     /concept-a/
+  B  Smart Visa Finder       /concept-b/
+  C  Bold Dark Premium       /concept-c/
 
-Use the “Design options” panel (bottom-left) to try colour themes, fonts,
-button shapes, card corners, hero layouts and density. Choices are saved
-in the browser and in the page URL, so you can copy a combination and
-share it with us (or use “Copy my selection”).
+The original approved demo is unchanged:
+https://incredibletravelers.github.io/it-homepage-demo/
 
-Demo only — forms do not send data. Hours shown: Mon–Sat, 10:00 AM – 6:00 PM.
-Open index.html in a browser if you are viewing this folder locally
-(internet needed for Google Fonts).
+Each concept is a full homepage with its own layout, typography and
+interaction model. Use the “Design A | B | C | All” chip to switch.
+Photos: Unsplash License. Demo only — forms do not send data.
+Hours shown: Mon–Sat, 10:00 AM – 6:00 PM.
